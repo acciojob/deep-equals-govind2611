@@ -2,7 +2,7 @@ function deepEquals(a, b) {
   // Check for strict equality first
   if (a === b) {
     // Handle NaN case
-    if (typeof a === 'number' && isNaN(a) && isNaN(b)) {
+    if (Number.isNaN(a) && Number.isNaN(b)) {
       return true;
     }
     return true;
